@@ -1,0 +1,101 @@
+@import "./globals.scss";
+@import "./mixins.scss";
+
+.nav {
+ display: flex;
+  padding: 0.5em 1em;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0.5px 1.5px $color-plomoONP;
+
+  &_menu {
+    display: none;
+
+    @include media(tablet) {
+      display: block;
+      width: 30%;
+      ul{
+        display: flex;
+        text-align: center;
+        gap:2em;
+        font-size:1.2rem;
+         font-weight:400;
+         font-family:$roboto-slab;
+            
+        a{
+            padding-top: 1.4em;
+            text-decoration: none;
+            color: $color-azulONP;
+            cursor: pointer;
+            &:hover,:focus,:active {
+               border-top: 7px solid $color-azulONP;
+               font-weight: 900;
+              }        
+        }
+      }
+            
+    }
+     ul {
+      list-style: none;
+    }
+  }
+  &_buttom{
+      display: none;
+      padding: 1em;
+      gap: 1em;
+      @include media(tablet) {
+        display: block;
+        display: flex;
+    }
+      div{
+          padding: 0.2em 0.2em;
+          border: 1px solid $color-amarilloONP;
+          font-weight: 400;
+          text-align: center;
+          width: 120px;
+          height: 42px;
+          font-size: 1.2rem;
+          border-radius: 8px;
+          justify-content: center;
+          
+      }
+  }
+
+
+
+
+
+  &_bars {
+       border-style: none;
+       display: block;
+       @include media(tablet) {
+        display: none;
+      }
+
+    svg {
+      width: 56px;
+      color: $color-azulONP;
+      padding-top: 6px;
+      margin-right: 0.8rem;
+    }
+  }
+
+
+  &_user{
+      display: flex;
+      flex-wrap: wrap;
+      gap:0.2em;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      svg{
+          width: 20px;
+          @include media(tablet) {
+            width:30px;
+        }
+      }
+
+    }
+
+}

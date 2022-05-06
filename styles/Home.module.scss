@@ -1,0 +1,23 @@
+
+@import "./globals.scss";
+@import "./mixins.scss";
+
+.home{
+  font-family:$roboto-slab
+}
+
+.title a {
+  text-decoration: none;
+  color:$color-rojoONP;
+  @include media(tablet) {
+    color:$color-celesteONP
+  }
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+
