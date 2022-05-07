@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0.5px 1.5px $color-plomoONP;
+   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 
   &_menu {
     display: none;
@@ -62,10 +62,6 @@
       }
   }
 
-
-
-
-
   &_bars {
        border-style: none;
        display: block;
@@ -80,7 +76,6 @@
       margin-right: 0.8rem;
     }
   }
-
 
   &_user{
       display: flex;
